@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 html {
 font-size: 14px;
@@ -16,6 +16,7 @@ font-size: 14px;
     grid-template-rows: auto 1fr 1fr auto auto;
     grid-gap: 1rem;
     transform: rotate(-45deg);
+    margin-top: 20vh;
     @media (max-width: 600px) {
             transform: rotate(0deg);
     }
@@ -23,7 +24,7 @@ font-size: 14px;
 }
 
 .heading__container--title {
-    font-family: 'Muli', sans-serif;
+font-family: 'Roboto', sans-serif;
     color: rgba(12, 12, 10, 0.8);
     grid-column: 1 / 4;
     text-align: right;
@@ -37,7 +38,8 @@ font-size: 14px;
 }
 
 .heading__container--subtitle {
-    font-family: 'Muli', sans-serif;
+font-family: 'Roboto', sans-serif;
+    color: rgba(12, 12, 10, 0.8);
     margin: 0;
     grid-column: 1 / 4;
     text-align: right;
@@ -46,10 +48,30 @@ font-size: 14px;
     grid-row: 2 / 5;
     justify-self: flex-end;
     align-self: flex-start;
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform:uppercase;
     @media (max-width: 600px) {
         writing-mode: horizontal-tb;
         grid-column: 4 / 4;
     }
 }
+
+.heading__container--link {
+    font-family: 'Roboto', sans-serif;
+    color: rgba(12, 12, 10, 0.8);
+    text-transform:uppercase;
+    font-weight: bolder;
+    border-top: 5px solid rgba(12, 12, 10, 0.8);
+    border-bottom: 5px solid rgba(12, 12, 10, 0.8);
+    font-weight: 700;
+    grid-row: 3;
+    grid-column: 4 / 6;
+    align-self: end;
+    font-size:1.5rem;
+    @media (max-width: 600px) {
+        grid-row: 5;
+        font-size: 2rem;
+        text-align:right;
+    }
+}
+
