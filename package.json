@@ -1,0 +1,36 @@
+{
+  "name": "flexbox",
+  "description": "",
+  "version": "0.1.0",
+  "main": "scss/main.scss",
+  "author": {
+    "name": "Judit Abelli Salvador",
+    "email": "jud.abelli@gmail.com",
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/judabelli/flexbox.git"
+  },
+  "private": true,
+  "keywords": [
+    "flexbox"
+  ],
+  "scripts": {
+    "build": "./node_modules/.bin/node-sass ./scss/main.scss --output ./css"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-assemble": "^0.6.3",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-cssnano": "^2.1.0",
+    "grunt-group-css-media-queries": "^1.0.1",
+    "grunt-sass": "^2.0.0",
+    "grunt-sass-vars-extractor": "^1.0.0-alpha",
+    "load-grunt-tasks": "^3.5.2",
+    "node-sass": "^4.5.2",
+    "prismjs": "^1.6.0"
+  }
+}

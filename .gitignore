@@ -1,0 +1,35 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+# JetBrains IDEs projects
+.idea/
+
+# Node Modules
+node_modules/
+npm-debug.log
+
+# Bower Components
+bower_components/
+
+# Sass/Scss Cache
+.sass-cache/
+
+# Other build related files
+_site/
+data/sass-vars.json
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Editor settings
+.vscode/settings.json
+

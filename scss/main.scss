@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+html {
+font-size: 14px;
+  @media (max-width: 600px) {
+       font-size: 8px;
+   }
+}
+/* The Grid template (columns or rows) define the width of each column/row. Proportionally. */
+
+.heading__container {
+    max-width: 66vw;
+    margin: auto;
+    display:grid;
+    grid-template-columns:auto 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: auto 1fr 1fr auto auto;
+    grid-gap: 1rem;
+    transform: rotate(-45deg);
+    @media (max-width: 600px) {
+            transform: rotate(0deg);
+    }
+
+}
+
+.heading__container--title {
+    font-family: 'Muli', sans-serif;
+    color: rgba(12, 12, 10, 0.8);
+    grid-column: 1 / 4;
+    text-align: right;
+    margin: 0;
+    font-size: 5rem;
+    text-transform:uppercase;
+     @media (max-width: 600px) {
+         grid-column: 4 / 4;
+
+     }
+}
+
+.heading__container--subtitle {
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    grid-column: 1 / 4;
+    text-align: right;
+    writing-mode: vertical-lr;
+    grid-column: 3 / 4;
+    grid-row: 2 / 5;
+    justify-self: flex-end;
+    align-self: flex-start;
+    font-size: 4rem;
+    text-transform:uppercase;
+    @media (max-width: 600px) {
+        writing-mode: horizontal-tb;
+        grid-column: 4 / 4;
+    }
+}
